@@ -95,7 +95,7 @@ end
 def play(board)
   until over?(board)
     token = current_player
-    turn(board,token)
+    turn(board)
   end
   winning_player = winner(board)
   puts "Congratulations #{winning_player}"
