@@ -44,11 +44,9 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   index = input_to_index(gets)
-  #token = board[index]
   if !valid_move?(board, index)
     turn(board)
   end
-  #binding.pry
   move(board, index, token='X')
   display_board(board)
 end
