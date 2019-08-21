@@ -64,4 +64,4 @@ def current_player(board)
   else
     correct_player = 'O'
   end
-end 
+end
