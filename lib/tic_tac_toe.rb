@@ -62,8 +62,6 @@ def current_player(board)
   if turn_count.odd?
     correct_player = 'X'
   else
-    correct_player = 'O' 
-
-
-
-  
+    correct_player = 'O'
+  end
+end 
