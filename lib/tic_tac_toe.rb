@@ -48,7 +48,7 @@ def turn(board)
   if !valid_move?(board, index)
     turn(board)
   end
-  binding.pry
+  #binding.pry
   move(board, index, token='X')
   display_board(board)
 end
