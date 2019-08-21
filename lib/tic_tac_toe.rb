@@ -95,7 +95,7 @@ end
 def play(board)
   turn(board)
   if over?(board)
-    puts winner
+    puts "Congratulations #{winner}""
   end
   turn(board)
 
