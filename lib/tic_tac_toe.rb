@@ -96,7 +96,7 @@ def play(board)
   until over?(board)
     turn(board)
   end
-  winner(board)
-  puts "Congratulations #{winner(board)}"
+  winning_player = winner(board)
+  puts "Congratulations #{winning_player}"
 
 end
