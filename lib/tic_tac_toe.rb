@@ -94,5 +94,7 @@ end
 
 def play(board)
   turn(board)
+  if over?(board)
+    puts winner
 
 end
