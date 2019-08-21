@@ -53,7 +53,7 @@ end
 
 def turn_count(board)
   turns = board.select do |position|
-    position == 'X' || position == 'Y'
+    board[position] == 'X' || board[position] == 'O'
     turns = turns.length
   end
 end
