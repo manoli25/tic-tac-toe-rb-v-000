@@ -47,7 +47,8 @@ def turn(board)
   if !valid_move?(board, index)
     turn(board)
   end
-  move(board, index, token='X')
+  token = current_player(board)
+  move(board, index, token)
   display_board(board)
 end
 
