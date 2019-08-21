@@ -57,3 +57,13 @@ def turn_count(board)
   end
   turns = turns.length
 end
+
+def current_player(board)
+  if turn_count.odd?
+    correct_player = 'X'
+  else
+    correct_player = 'O' 
+
+
+
+  
