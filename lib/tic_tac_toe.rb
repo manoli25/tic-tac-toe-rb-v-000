@@ -49,6 +49,6 @@ def turn(board)
     turn(board)
   end
   binding.pry
-  move(board, index, token)
+  move(board, index, token='X')
   display_board(board)
 end
