@@ -94,7 +94,7 @@ end
 
 def play(board)
   until over?(board)
-    token = current_player
+  
     turn(board)
   end
   winning_player = winner(board)
