@@ -65,3 +65,29 @@ def current_player(board)
     correct_player = 'O'
   end
 end
+
+def won?(board)
+  WIN_COMBINATIONS.detect do |combo|
+    board[combo[0]] == board[combo[1]] &&
+    board[combo[1]] == board[combo[2]] &&
+    position_taken?(board, combo[0])
+  end
+end
+
+def full?(board)
+  board.all? { |player| player == "X" || player == "O" }
+end
+
+def draw?(board)
+  full?(board) && !won?(board)
+end
+
+def over?(board)
+  full?(board) || won?(board) || draw?(board)
+end
+
+def winner(board)
+  if winning_combo = won?(board) # this works because won? returns winning array
+    board[winning_combo.first]
+  end
+end
