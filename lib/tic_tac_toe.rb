@@ -50,3 +50,7 @@ def turn(board)
   move(board, index, token='X')
   display_board(board)
 end
+
+def turn_count(board)
+  turns = board.length
+end
